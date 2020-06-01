@@ -55,6 +55,6 @@ def winner(board)
     return nil
   else
     combination = won?(board)
-    return combination[0]
+    return board[combiation.pop]
   end
 end
