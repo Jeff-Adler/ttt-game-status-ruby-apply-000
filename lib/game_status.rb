@@ -27,7 +27,7 @@ def won?(board)
       board[position] == "O"
       end
     end)
-    return true
+      return true
   else
     return false
   end
