@@ -12,5 +12,5 @@ def WIN_COMBINATIONS = [
   [1,4,7] #Middle column
   [2,5,8] #Right column
   [0,4,8] #Back diagonal
-  [2,4,6]
+  [2,4,6] #Forward diagonal 
 ]
