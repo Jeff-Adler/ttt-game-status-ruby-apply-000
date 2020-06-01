@@ -35,9 +35,10 @@ def full?(board)
 end
 
 def draw?(board)
-  if board.all? do |position|
+  if board.any? { |e|  }? do |position|
     position_taken?(board, position)
   end
+
     if (won?(board) != false)
       return false
     end
