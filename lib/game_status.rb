@@ -43,7 +43,7 @@ def won?(board)
       board [position] == "O"
     end)
       return combination
-    end 
+    end
   end
 end
 
