@@ -21,7 +21,7 @@ def won?(board)
       board[position] == "X"
       end
     end)
-  ||
+  &&
   (WIN_COMBINATIONS.any? do |combination|
     combination.all? do |position|
       board[position] == "O"
