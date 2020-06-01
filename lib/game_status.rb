@@ -35,18 +35,10 @@ end
 =end
 
 def won?(board)
-  if (WIN_COMBINATIONS.any? do |combination|
-    combination.all? do |position|
-      board[position] == "X"
-      end
-    end) ||
-  (WIN_COMBINATIONS.any? do |combination|
-    combination.all? do |position|
-      board[position] == "O"
-      end
+  WIN_COMBINATIONS.any? do |combination|
+    if (combination.all? do |position|
+      board [position] == "X"
     end)
-      return true
-  else
-      return false
+      return combination
   end
 end
