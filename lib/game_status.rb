@@ -19,13 +19,16 @@ def won?(board)
   if (WIN_COMBINATIONS.any? do |combination|
     combination.all? do |position|
       board[position] == "X"
+    end
   end)
   ||
   (WIN_COMBINATIONS.any? do |combination|
     combination.all? do |position|
       board[position] == "O"
+    end
   end)
     return true
   else
     return false
+  end
 end
