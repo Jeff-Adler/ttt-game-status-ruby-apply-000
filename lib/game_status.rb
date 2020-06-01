@@ -40,5 +40,6 @@ def won?(board)
       board [position] == "X"
     end)
       return combination
+    end 
   end
 end
