@@ -34,22 +34,6 @@ def full?(board)
   end
 end
 
-=begin
-def draw?(board)
-  if (board.any? do |position|
-    position_taken?(board, position)
-  end == false)
-    return false
-  else
-    if (won?(board) != false)
-      return false
-    else
-      return true
-    end
-  end
-end
-=end
-
 def draw?(board)
   if (won?(board) == false && full?(board) == true)
     return true
@@ -67,5 +51,5 @@ def over?(board)
 end
 
 def winner(board)
-  
+
 end
