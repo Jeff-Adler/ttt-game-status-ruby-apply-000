@@ -38,6 +38,9 @@ def won?(board)
   WIN_COMBINATIONS.any? do |combination|
     if (combination.all? do |position|
       board [position] == "X"
+    end) ||
+      (combination.all? do |position|
+      board [position] == "O"
     end)
       return combination
     end 
