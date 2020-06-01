@@ -54,7 +54,7 @@ def winner(board)
   if won?(board) == false
     return nil
   else
-      combination = won?(board)
-      return combination[0]
-    end
+    combination = won?(board)
+    return combination[0]
+  end
 end
